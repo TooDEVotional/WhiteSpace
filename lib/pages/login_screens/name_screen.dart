@@ -11,8 +11,7 @@ class NamePage extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     var padding = MediaQuery.of(context).padding;
     double newheight = height - padding.top - padding.bottom;
-    print(newheight * 0.2);
-    print(width * 0.4);
+    
 
     return Scaffold(
         body: SafeArea(

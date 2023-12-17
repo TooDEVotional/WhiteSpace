@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:white_space/pages/feed_screens/experiment_page.dart';
 import 'package:white_space/pages/feed_screens/feed_page.dart';
 import 'package:white_space/pages/feed_screens/home_page.dart';
+import 'package:white_space/pages/feed_screens/reflect_page.dart';
 
 import 'package:white_space/pages/login_screens/email_screen.dart';
 import 'package:white_space/pages/login_screens/interests_screen.dart';
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: InterestScreen(),
+      home: ReflectScreen(),
     );
   }
 }

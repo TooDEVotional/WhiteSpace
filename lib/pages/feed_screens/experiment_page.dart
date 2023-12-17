@@ -31,9 +31,9 @@ class _ExperimentScreenState extends State<ExperimentScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    print(width);
+    
     double height = MediaQuery.of(context).size.height;
-    print(height);
+    
     var padding = MediaQuery.of(context).padding;
     double newheight = height - padding.top - padding.bottom;
     return Scaffold(
