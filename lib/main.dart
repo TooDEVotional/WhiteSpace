@@ -5,6 +5,8 @@ import 'package:white_space/pages/feed_screens/feed_page.dart';
 import 'package:white_space/pages/feed_screens/home_page.dart';
 
 import 'package:white_space/pages/login_screens/email_screen.dart';
+import 'package:white_space/pages/login_screens/interests_screen.dart';
+import 'package:white_space/pages/onboarding_screens/first_onb_page.dart';
 import 'package:white_space/pages/splash_screen.dart';
 
 void main() {
@@ -60,7 +62,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: SplashScreen(),
+      home: InterestScreen(),
     );
   }
 }
