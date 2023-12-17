@@ -28,9 +28,9 @@ class _InterestScreenState extends State<InterestScreen> {
         children: [
           // Gap(16),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              //Gap(16),
+              Gap(16),
               IconButton.filled(
                   onPressed: null,
                   icon: Icon(
@@ -42,32 +42,6 @@ class _InterestScreenState extends State<InterestScreen> {
                           Color(0xFF1E1E1E).withOpacity(0.6)),
                       shape: MaterialStateProperty.all(CircleBorder()))),
               Gap(16),
-              Container(
-                height: 8,
-                width: 84,
-                decoration: BoxDecoration(
-                  color: Color(0xFF1E1E1E).withOpacity(0.6),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Gap(8),
-              Container(
-                height: 8,
-                width: 84,
-                decoration: BoxDecoration(
-                  color: Color(0xFF1E1E1E).withOpacity(0.6),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Gap(8),
-              Container(
-                height: 8,
-                width: 84,
-                decoration: BoxDecoration(
-                  color: Color(0xFF1E1E1E).withOpacity(0.6),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
             ],
           ),
           Gap(16),
@@ -87,10 +61,25 @@ class _InterestScreenState extends State<InterestScreen> {
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
                 Container(
-                  height: newheight - (newheight*0.35),
+                  height: newheight - (newheight * 0.48),
                   width: width - 56,
                   child: InterestList(),
-                )
+                ),
+                Gap(32),
+                Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      color: Theme.of(context).secondaryHeaderColor,
+                    ),
+                    width: width,
+                    height: 64,
+                    child: ElevatedButton(
+                        onPressed: null,
+                        child: Text(
+                          "Done",
+                          style:
+                              TextStyle(color: Theme.of(context).primaryColor),
+                        )))
               ],
             ),
           )
