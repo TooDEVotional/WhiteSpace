@@ -7,6 +7,8 @@ import 'package:white_space/pages/feed_screens/reflect_page.dart';
 
 import 'package:white_space/pages/login_screens/email_screen.dart';
 import 'package:white_space/pages/login_screens/interests_screen.dart';
+import 'package:white_space/pages/login_screens/magic_link.dart';
+import 'package:white_space/pages/login_screens/name_screen.dart';
 import 'package:white_space/pages/onboarding_screens/first_onb_page.dart';
 import 'package:white_space/pages/splash_screen.dart';
 
@@ -63,7 +65,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: FirstOnboardingPage(),
+      home: NamePage(),
     );
   }
 }

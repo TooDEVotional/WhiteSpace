@@ -21,32 +21,30 @@ class NamePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Gap(16),
 
             // Gap(16),
-            Center(
-              child: SizedBox(
-                height: newheight * 0.4,
-                width: width * 0.8,
-                child: SvgPicture.asset(
-                  'assets/Self confidence-bro.svg',
-                  fit: BoxFit.contain,
-                ),
+            // Center(
+            //   child: SizedBox(
+            //     height: newheight * 0.4,
+            //     width: width * 0.8,
+            //     child: SvgPicture.asset(
+            //       'assets/Email campaign-pana.svg',
+            //       fit: BoxFit.contain,
+            //     ),
+            //   ),
+            // ),
+            Gap(256),
+            Text(
+              "Please enter your \nname.",
+              style: TextStyle(
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF1E1E1E),
               ),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "Please enter your \nname.",
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF1E1E1E),
-                ),
-                textAlign: TextAlign.start,
-              ),
+              textAlign: TextAlign.start,
             ),
             Gap(8),
             Row(

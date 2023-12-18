@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:white_space/components/skip_auth.dart';
 import 'package:white_space/pages/onboarding_screens/reflect_onb_page.dart';
 
 class SecondOnboardingPage extends StatelessWidget {
@@ -107,15 +108,7 @@ class SecondOnboardingPage extends StatelessWidget {
                     style: TextStyle(color: Theme.of(context).primaryColor),
                   ))),
           Gap(16),
-          Center(
-            child: Text("Skip to Authenticate",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.normal,
-                  color: const Color(0xFF1E1E1E).withOpacity(0.6),
-                )),
-          ),
+          SkipToAuth(),
         ],
       ),
     )));
