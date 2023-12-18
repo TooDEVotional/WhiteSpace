@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+import 'package:white_space/pages/login_screens/email_screen.dart';
 
 class NamePage extends StatelessWidget {
   const NamePage({super.key});
@@ -80,7 +81,10 @@ class NamePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: IconButton(
-                    onPressed: null,
+                    onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => EmailPage()));
+                  },
                     icon: Icon(
                       Icons.arrow_forward,
                       color: Theme.of(context).primaryColor,

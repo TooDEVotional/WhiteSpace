@@ -7,7 +7,9 @@ import 'package:gap/gap.dart';
 import 'package:white_space/components/feed_card.dart';
 import 'package:white_space/constants/articles_data.dart';
 import 'package:white_space/models/article_models.dart';
+import 'package:white_space/pages/feed_screens/experiment_page.dart';
 import 'package:white_space/pages/feed_screens/feed_page.dart';
+import 'package:white_space/pages/feed_screens/reflect_page.dart';
 import 'package:white_space/pages/onboarding_screens/read_onb_page.dart';
 import 'package:white_space/services/news.dart';
 
@@ -67,14 +69,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     const Gap(8),
-                    ImageFiltered(
-                      imageFilter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ReflectScreen()));
+                      },
                       child: Text('Reflect',
                           style: Theme.of(context).textTheme.displaySmall),
                     ),
                     const Gap(8),
-                    ImageFiltered(
-                      imageFilter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+                    GestureDetector(
+                      onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => ExperimentScreen()));
+                  },
                       child: Text(
                         'Experiment',
                         style: Theme.of(context).textTheme.displaySmall,

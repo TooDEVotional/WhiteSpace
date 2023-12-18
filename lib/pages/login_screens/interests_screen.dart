@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:white_space/components/interest_list.dart';
+import 'package:white_space/pages/feed_screens/home_page.dart';
+import 'package:white_space/pages/splash_screen.dart';
 
 class InterestScreen extends StatefulWidget {
   const InterestScreen({super.key});
@@ -31,16 +33,7 @@ class _InterestScreenState extends State<InterestScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Gap(16),
-              IconButton.filled(
-                  onPressed: null,
-                  icon: Icon(
-                    Icons.arrow_back,
-                    color: Theme.of(context).primaryColor,
-                  ),
-                  style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                          Color(0xFF1E1E1E).withOpacity(0.6)),
-                      shape: MaterialStateProperty.all(CircleBorder()))),
+              
               Gap(16),
             ],
           ),
