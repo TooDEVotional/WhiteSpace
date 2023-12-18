@@ -8,6 +8,7 @@ import 'package:white_space/components/feed_card.dart';
 import 'package:white_space/constants/articles_data.dart';
 import 'package:white_space/models/article_models.dart';
 import 'package:white_space/pages/feed_screens/feed_page.dart';
+import 'package:white_space/pages/onboarding_screens/read_onb_page.dart';
 import 'package:white_space/services/news.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -142,9 +143,16 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: Theme.of(context).textTheme.displayMedium,
                           ),
                           const Gap(16),
-                          Text(
-                            "Books",
-                            style: Theme.of(context).textTheme.labelSmall,
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) =>
+                                      SecondOnboardingPage()));
+                            },
+                            child: Text(
+                              "Books",
+                              style: Theme.of(context).textTheme.labelSmall,
+                            ),
                           ),
                           const Gap(16),
                           Text(

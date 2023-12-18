@@ -213,4 +213,3 @@ class _ReflectScreenState extends State<ReflectScreen> {
   }
 }
 
-// padding: const EdgeInsets.fromLTRB(0, 24, 8, 0),

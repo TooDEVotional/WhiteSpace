@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:white_space/pages/login_screens/email_screen.dart';
 import 'package:white_space/pages/login_screens/name_screen.dart';
-import 'package:white_space/pages/onboarding_screens/read_onb_page.dart';
 
-class FirstOnboardingPage extends StatelessWidget {
-  const FirstOnboardingPage({super.key});
+class FourthOnboardingPage extends StatelessWidget {
+  const FourthOnboardingPage({super.key});
 
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -68,7 +68,7 @@ class FirstOnboardingPage extends StatelessWidget {
           ),
           Gap(120),
           Text(
-            "Learn Like a Leader.",
+            "Read",
             style: TextStyle(
               fontSize: 36.0,
               fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class FirstOnboardingPage extends StatelessWidget {
           ),
           Gap(16),
           Text(
-              "Embrace the 5-hour rule: Learn, read, reflect, experiment weekly for growth—inspired by visionaries who achieved greatness.",
+              "Explore articles and books, effortlessly track progress, set reading goals, mark completed materials, and witness your intellectual growth.",
               maxLines: 4,
               textAlign: TextAlign.start,
               style: TextStyle(
@@ -100,28 +100,22 @@ class FirstOnboardingPage extends StatelessWidget {
                         .secondaryHeaderColor, // Background color
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => SecondOnboardingPage()));
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => NamePage()));
                   },
                   child: Text(
-                    "Start",
+                    "Authenticate",
                     style: TextStyle(color: Theme.of(context).primaryColor),
                   ))),
           Gap(16),
           Center(
-            child: GestureDetector(
-              onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => NamePage()));
-                  },
-              child: Text("Skip to Authenticate",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.normal,
-                    color: const Color(0xFF1E1E1E).withOpacity(0.6),
-                  )),
-            ),
+            child: Text("Skip to Authenticate",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.normal,
+                  color: const Color(0xFF1E1E1E).withOpacity(0.6),
+                )),
           ),
         ],
       ),
