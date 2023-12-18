@@ -39,9 +39,10 @@ dependencies:
   bottom_sheet: ^4.0.0
   gap: ^3.0.1
   flutter_svg: ^2.0.9
-  image_picker: ^1.0.5
+  supabase_flutter: ^2.0.1
   dio: ^5.4.0
-  http: ^1.1.2
+  image_picker: ^1.0.5
+  webview_flutter: ^4.4.2
 
 dev_dependencies:
   flutter_test:
