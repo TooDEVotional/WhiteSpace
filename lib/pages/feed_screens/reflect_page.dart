@@ -124,17 +124,13 @@ class _ReflectScreenState extends State<ReflectScreen> {
                   ),
                   child: Column(
                     children: [
-                      IconButton(
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => FeedPage()));
-                          },
-                          icon: Icon(
-                            Icons.keyboard_arrow_up_rounded,
-                            size: 48,
-                            color: Theme.of(context).secondaryHeaderColor,
-                          )),
-
+                     IconButton(
+                        onPressed: null,
+                        icon: Icon(
+                          Icons.horizontal_rule_rounded,
+                          size: 48,
+                          color: Theme.of(context).secondaryHeaderColor,
+                        )),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(8, 0, 96, 0),
                         child: Row(
